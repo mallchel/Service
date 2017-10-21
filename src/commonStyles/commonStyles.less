@@ -1,0 +1,45 @@
+@import './variables.less';
+
+.teaserCard {
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: left;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid @BASE_BORDER_COLOR;
+  padding-top: @PADDING_BASE*1.5;
+  padding-bottom: @PADDING_BASE*2;
+  &:first-child{
+    border-top: 1px solid @BASE_BORDER_COLOR;
+  }
+}
+
+.listItemTextContainer {  
+  width: 300px;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: left;
+  color: #5ead19;
+  cursor: pointer;
+  &:hover {
+    color: #d0011b;
+  }
+}
+
+.buttonBg {
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #8bc541;
+}
+
+.priceContainer {
+  font-size: 36px;
+  line-height: 1.25;
+  text-align: center;
+}

@@ -1,0 +1,48 @@
+@import './fonts/index.css';
+@import '~react-datepicker/dist/react-datepicker.css';
+@import '~rc-time-picker/assets/index.css';
+@import './overrideStyles/react-datepicker.less';
+@import './overrideStyles/rc-time-picker.less';
+@import (reference) './commonStyles/index.less';
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DINPro', sans-serif;
+  color: @TEXT_COLOR;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1.25;
+  font-weight: normal;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  border: transparent;
+  cursor: pointer;
+  &:focus {
+    outline: 0px;
+  }
+}
+
+input {
+  border: transparent;
+  &focus {
+    outline: 0px;
+  }
+}

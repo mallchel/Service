@@ -1,0 +1,72 @@
+@import (reference) '../commonStyles/index.less';
+
+.priceContainer {
+  .priceContainer;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 @PADDING_BASE;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(94, 173, 25, 0.05);
+}
+
+.decrement {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  margin-right: -1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #d0011b;
+  background-color: white;
+  position: relative;
+}
+
+.minus {
+  width: 14px;
+  height: 2px;
+  background-color: #d0011b;
+  position: absolute;
+}
+
+.increment {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  font-size: 18px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #5ead19;
+  background-color: white;
+  position: relative;
+}
+
+.plus {
+  width: 14px;
+  height: 2px;
+  opacity: 0.5;
+  background-color: #5ead19;
+  position: absolute;
+  &::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 12px;
+    top: -5px;
+    left: 6px;
+    background-color: #5ead19;
+    position: absolute;
+  }
+}
+
+.addOrder {
+  .buttonBg;
+  width: 220px;
+  margin-top: 35px;
+}
